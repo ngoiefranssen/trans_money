@@ -56,7 +56,7 @@ const Navbar = () =>{
                   Sing-Up
                 </a>
                 <a className="btn btn-outline-dark ms-2">
-                  <i className="fa fa-shopping-cart me-1" href="/cart"></i> Cart;
+                  <i className="fa fa-shopping-cart me-1" href="/cart"></i> Cart
                 </a>
               </div>
             </div>

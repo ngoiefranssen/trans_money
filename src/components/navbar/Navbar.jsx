@@ -1,72 +1,68 @@
-// import { a } from "react-router-dom";
-import { useState, useEffect } from "react";
-import axios from 'axios';
 
 
 const Navbar = () =>{
 
-
-
     return(
-             <div>
-             <nav classNameName="navbar navbar-expand-lg bg-light bg-white py-4 shadow-sm">
-                <div classNameName="container">
-                    <a classNameName="navbar-brand fw-bold fs-4" to="">
-                        Trans_Money
-                    </a>
-          {/* <button
-            classNameName="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span classNameName="navbar-toggler-icon"></span>
-          </button> */}
-          <div classNameName="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul classNameName="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li classNameName="nav-item">
-                <a
-                  classNameName="nav-a active"
-                  aria-current="page"
-                  to=""
-                >
-                  Home
+        <div>
+        <nav className="navbar navbar-expand-lg bg-light bg-white py-4 shadow-sm">
+          <div className="container">
+            <a className="navbar-brand fw-bold fs-4" href="/">
+              Collection
+            </a>
+            <buthrefn
+              className="navbar-hrefggler"
+              type="buthrefn"
+              data-bs-hrefggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="hrefggle navigation"
+            >
+              <span className="navbar-hrefggler-icon"></span>
+            </buthrefn>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav mx-auhref mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a
+                    className="nav-a active"
+                    aria-current="page"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-a" href="/products">
+                    Products
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-a" href="/about">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-a" href="/contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+              <div className="buthrefns">
+                <a className="btn btn-outline-dark">
+                  <i className="fa fa-sign-in me-1" href="/login"></i> Login
                 </a>
-              </li>
-              <li classNameName="nav-item">
-                <a classNameName="nav-a" to="">
-                  List
+                <a className="btn btn-outline-success ms-2">
+                  <i className="fa fa-user-plus me-2 ms" href="/sing_up"></i>
+                  Sing-Up
                 </a>
-              </li>
-              <li classNameName="nav-item">
-                <a classNameName="nav-a" to="">
-                  About
+                <a className="btn btn-outline-dark ms-2">
+                  <i className="fa fa-shopping-cart me-1" href="/cart"></i> Cart;
                 </a>
-              </li>
-              <li classNameName="nav-item">
-                <a classNameName="nav-a" to="">
-                  Contact
-                </a>
-              </li>
-            </ul>
-            {/* <div className="dropdown show">
-                <a className="btn btn-secondary dropdown-toggle"
-                    to="#" role="button" id="actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                
-                </a>
-                <div className="dropdown-menu" aria-labelledby="actions">
-                    <a className="dropdown-item" to="#">Login</a>
-                    <a className="dropdown-item" to="#">Register</a>
-                    <a className="dropdown-item" to="#">Profil</a>
-                </div>
-            </div> */}
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
-        </div>
+        </nav>
+      </div>   
     );
 };
 

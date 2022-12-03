@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 const Navbar = () =>{
 
@@ -36,15 +37,15 @@ const Navbar = () =>{
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link" to="/about">
+                <Link className="nav-Link" to="/">
                   ListTransfert
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-Link" to="/contact">
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className="buttons">
               <Link className="btn btn-outline-dark">
@@ -55,8 +56,7 @@ const Navbar = () =>{
                 Sing-Up
               </Link>
               <Link className="btn btn-outline-dark ms-2">
-                <i className="fa fa-profil me-1" to="/cart"></i> Cart(
-                {state.length});
+                <i className="fa fa-profil me-1" to="/cart"></i> Profil;
               </Link>
             </div>
           </div>

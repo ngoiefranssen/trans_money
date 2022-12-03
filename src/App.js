@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/list_depot" element={<ListsDepot />} />
-        <Route path="/list_transfert" />
+        <Route path="/listdepot" element={<ListsDepot />} />
+        <Route path="/listtransfert" />
       </Routes>
     </div >
   );

@@ -32,12 +32,12 @@ const Navbar = () =>{
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link" to="/list_depot">
+                <Link className="nav-Link" to="/listdepot">
                   ListsDepot
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-Link" to="list_transfert">
+                <Link className="nav-Link" to="listtransfert">
                   ListTransfert
                 </Link>
               </li>

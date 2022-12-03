@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import ListsDepot from "./components/list/ListDepot";
 import ListTransfert from "./components/list/ListTransfert";
+import './App.css'
 
 function App() {
   return (

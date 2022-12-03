@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () =>{
 
-    return(
-        <div>
-        <nav className="navbar navbar-expand-lg bg-light bg-white py-4 shadow-sm">
+  return(
+    <div>
+      <nav className="navbar navbar-expand-lg bg-light bg-white py-4 shadow-sm">
           <div className="container">
-            <Link className="navbar-brand fw-bold fs-4" to="/">
+            <NavLink className="navbar-brand fw-bold fs-4" to="/">
               TransMoney
-            </Link>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -23,23 +23,23 @@ const Navbar = () =>{
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     className="nav-Link active"
                     aria-current="page"
                     to="/"
                   >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-Link" to="/listdepot">
+                <li className="nav-item ms-4">
+                  <NavLink className="nav-Link" to="/listdepot">
                     ListsDepot
-                  </Link>
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-Link" to="listtransfert">
+                <li className="nav-item ms-4">
+                  <NavLink className="nav-Link" to="listtransfert">
                     ListTransfert
-                  </Link>
+                  </NavLink>
                 </li>
                 {/* <li className="nav-item">
                   <Link className="nav-Link" to="/contact">
@@ -48,22 +48,22 @@ const Navbar = () =>{
                 </li> */}
               </ul>
               <div className="buttons">
-                <Link className="btn btn-outline-dark">
+                <NavLink className="btn btn-outline-dark">
                   <i className="fa fa-sign-in me-1" to="/login"></i> Login
-                </Link>
-                <Link className="btn btn-outline-success ms-2">
+                </NavLink>
+                <NavLink className="btn btn-outline-success ms-2">
                   <i className="fa fa-user-plus me-2 ms" to="/sing_up"></i>
                   Sing-Up
-                </Link>
-                <Link className="btn btn-outline-dark ms-2">
+                </NavLink>
+                <NavLink className="btn btn-outline-dark ms-2">
                   <i className="fa fa-profil me-1" to="/cart"></i> Profil
-                </Link>
+                </NavLink>
               </div>
             </div>
           </div>
-        </nav>
-      </div>  
-    );
+      </nav>
+    </div>  
+  );
 };
 
 export default Navbar;

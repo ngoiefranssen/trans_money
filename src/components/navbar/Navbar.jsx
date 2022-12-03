@@ -7,7 +7,7 @@ const Navbar = () =>{
             <div className="container">
                 <a className="navbar-brand fw-bold fs-4" href="/">
                 TransMoney
-                </a>s
+                </a>
                 {/* <buthrefn
                 className="navbar-hrefggler"
                 type="buthrefn"

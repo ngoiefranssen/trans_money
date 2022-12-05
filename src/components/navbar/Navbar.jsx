@@ -6,18 +6,19 @@ import { useState } from 'react';
 
 const Navbar = () =>{
 
-  const {state, setState} = useState(false);
-  const showDropdown = () => {
-    setState(true);
-  }
+  // const {state, setState} = useState(false);
+  // const showDropdown = () => {
+  //   setState(true);
+  // }
 
-  const hideDropdown = () =>{
-    setState(false);
-  }
+  // const hideDropdown = () =>{
+  //   setState(false);
+  // }
 
   return(
     <>
-      <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
+
+       {/* <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
           <div className="container header">
             <NavLink className="navbar-brand fw-bold fs-4" to="/home_client">
               TransMoney
@@ -51,11 +52,11 @@ const Navbar = () =>{
                   <NavLink className="nav-Link" to="/list_transfert"> List Transfert</NavLink>
                 </li>
                
-                {/* <li className="nav-item">
+               <li className="nav-item">
                   <NavLink className="nav-Link" to="/contact">
                     Contact
                   </NavLink>
-                </li> */}
+                </li> 
               </ul>
               <div className='dropdown'>
                   <div className='dropdown-menu' onMouseEnter={showDropdown}
@@ -87,7 +88,7 @@ const Navbar = () =>{
             </div>
           </div>
           </div>
-      </nav>
+      </nav> */}
     </>  
   );
 };

@@ -9,7 +9,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar position="fixed" />
       <Routes>
         <Route path="/home_client" element={<Home />} />
         < Route path="/list_depot" element={<ListsDepot />} />

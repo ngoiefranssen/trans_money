@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import "../navbar/css/NavbarCss.css";
 import "../list/listStyle/listStyle.css"
-import Dropdown from '../dropdown/Dropdown';
 
 
 const Navbar = () =>{
@@ -35,7 +34,6 @@ const Navbar = () =>{
                     Home
                   </NavLink>
                 </li>
-                <Dropdown />
                 {/* <div className='dropdown'>
                   <div className='dropdown-menu' onMouseEnter={showDropdown}
                        onMouseLeave={hideDropdown}>

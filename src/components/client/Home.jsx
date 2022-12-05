@@ -1,4 +1,5 @@
-import '../client/style/homeStyle.css'
+import '../client/style/homeStyle.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Home = () =>{
@@ -20,6 +21,10 @@ const Home = () =>{
             <div className="my-4">
                 <button className="btn btn-outline-dark ms-3">Transfert</button>
                 <button className="btn btn-outline-success ms-3">Depot</button>
+                <NavLink type='button' className="btn btn-outline-dark ms-3"
+                         to='/edit_client/:{id}' 
+                         data-toggle="modal" data-target="#exampleModal" d
+                         ata-whatever="@mdo">Edit Information</NavLink>
             </div>
         </div>
     )

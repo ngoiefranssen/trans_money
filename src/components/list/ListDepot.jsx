@@ -58,7 +58,7 @@ const ListsDepot = () =>{
                             <h3>Schools</h3>
                         </div>
                         <div className="icon-case">
-                            <img src="schools.png" alt="">
+                            <img src="schools.png" alt="" />
                         </div>
                     </div>
                     <div className="card">
@@ -67,7 +67,7 @@ const ListsDepot = () =>{
                             <h3>Income</h3>
                         </div>
                         <div className="icon-case">
-                            <img src="income.png" alt="">
+                            <img src="income.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -134,24 +134,24 @@ const ListsDepot = () =>{
                                 <th>option</th>
                             </tr>
                             <tr>
-                                <td><img src="user.png" alt=""></td>
+                                <td><img src="user.png" alt="" /></td>
                                 <td>John Steve Doe</td>
-                                <td><img src="info.png" alt=""></td>
+                                <td><img src="info.png" alt="" /></td>
                             </tr>
                             <tr>
-                                <td><img src="user.png" alt=""></td>
+                                <td><img src="user.png" alt="" /></td>
                                 <td>John Steve Doe</td>
-                                <td><img src="info.png" alt=""></td>
+                                <td><img src="info.png" alt="" /></td>
                             </tr>
                             <tr>
-                                <td><img src="user.png" alt=""></td>
+                                <td><img src="user.png" alt="" /></td>
                                 <td>John Steve Doe</td>
-                                <td><img src="info.png" alt=""></td>
+                                <td><img src="info.png" alt="" /></td>
                             </tr>
                             <tr>
-                                <td><img src="user.png" alt=""></td>
+                                <td><img src="user.png" alt="" /></td>
                                 <td>John Steve Doe</td>
-                                <td><img src="info.png" alt=""></td>
+                                <td><img src="info.png" alt="" /></td>
                             </tr>
 
                         </table>

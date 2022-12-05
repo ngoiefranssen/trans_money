@@ -7,11 +7,11 @@ import { useState } from 'react';
 const Navbar = () =>{
 
   const {state, setState} = useState(false);
-  const {showDropdown} = () => {
+  const showDropdown = () => {
     setState(true);
   }
 
-  const {hideDropdown} = () =>{
+  const hideDropdown = () =>{
     setState(false);
   }
 
@@ -44,26 +44,12 @@ const Navbar = () =>{
                     Home
                   </NavLink>
                 </li>
-                <div className='dropdown'>
-                  <div className='dropdown-menu' onMouseEnter={showDropdown}
-                       onMouseLeave={hideDropdown}>
-                        <p>Lists</p>
-                        (state ?
-                          <ul className='dropdown-list' onMouseEnter={showDropdown}>
-                       
-                            <li className="nav-item ms-4">
-                              <NavLink className="nav-Link" to="/list_depot">
-                                List Depot
-                              </NavLink>
-                            </li>
-                            <li className="nav-item ms-4">
-                              <NavLink className="nav-Link" to="/list_transfert">
-                                List Transfert
-                              </NavLink>
-                            </li>
-                            </ul>) : null
-                  </div>
-                </div>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav-Link" to="/list_depot">ListDepot</NavLink>
+                </li>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav-Link" to="/list_transfert"> List Transfert</NavLink>
+                </li>
                
                 {/* <li className="nav-item">
                   <NavLink className="nav-Link" to="/contact">
@@ -71,19 +57,35 @@ const Navbar = () =>{
                   </NavLink>
                 </li> */}
               </ul>
-              <div className="buttons">
-                <NavLink className="btn btn-outline-dark">
-                  <i className="fa fa-sign-in me-1" to="/login"></i> Login
-                </NavLink>
-                <NavLink className="btn btn-outline-success ms-2">
-                  <i className="fa fa-user-plus me-2 ms" to="/sing_up"></i>
-                  Sing-Up
-                </NavLink>
-                <NavLink className="btn btn-outline-dark ms-2">
-                  <i className="fa fa-profil me-1" to="/cart"></i> Profil
-                </NavLink>
+              <div className='dropdown'>
+                  <div className='dropdown-menu' onMouseEnter={showDropdown}
+                       onMouseLeave={hideDropdown}>
+                        Parametre
+                        {
+                          state ?(
+                          <ul className='dropdown-list' onMouseEnter={showDropdown}>
+                            <li>
+                              <NavLink to="/login" >
+                                <i className="fa fa-sign-in me-1" ></i> Login
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/sing_up">
+                               <i className="fa fa-user-plus me-2 ms" ></i>
+                                 Sing-Up
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/profil">
+                                <i className="fa fa-profil me-1" ></i> Profil
+                              </NavLink>
+                            </li>
+                           
+                          </ul>):null
+                        }; 
               </div>
             </div>
+          </div>
           </div>
       </nav>
     </>  

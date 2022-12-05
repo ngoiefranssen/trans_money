@@ -1,0 +1,43 @@
+.dropdown {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+;
+
+.dropdown-menu {
+    width: 20rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(250, 253, 255);
+    position: relative;
+    cursor: pointer;
+}
+
+;
+
+.dropdown-menu:hover {
+    color: white;
+    background-color: white;
+}
+
+;
+
+.dropdown-list {
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+;
+
+.dropdown-list:hover {
+    border: 1px solid white;
+}
+
+;

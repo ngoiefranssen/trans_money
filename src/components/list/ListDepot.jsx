@@ -92,12 +92,12 @@ const ListsDepot = () =>{
                             </tr>
                         </table>
                     </div>
-                    <div className="new-students">
+                    {/* <div className="new-students">
                         <div className="title">
                             <h2>New Students</h2>
                             <a href="#" className="btn">View All</a>
                         </div>
-                        <table>
+                        {/* <table>
                             <tr>
                                 <th>Profile</th>
                                 <th>Name</th>
@@ -125,7 +125,7 @@ const ListsDepot = () =>{
                             </tr>
 
                         </table>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

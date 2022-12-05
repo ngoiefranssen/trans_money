@@ -74,45 +74,15 @@ const ListsDepot = () =>{
                 <div className="content-2">
                     <div className="recent-lists-depots">
                         <div className="title">
-                            <h2>Recent Payments</h2>
+                            <h2>Lists depots</h2>
                             <a href="#" className="btn">View All</a>
                         </div>
                         <table>
                             <tr>
-                                <th>Name</th>
-                                <th>School</th>
-                                <th>Amount</th>
+                                <th>Montant</th>
+                                <th>Date</th>
+                                <th>Devise</th>
                                 <th>Option</th>
-                            </tr>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>St. James College</td>
-                                <td>$120</td>
-                                <td><a href="#" className="btn">View</a></td>
-                            </tr>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>St. James College</td>
-                                <td>$120</td>
-                                <td><a href="#" className="btn">View</a></td>
-                            </tr>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>St. James College</td>
-                                <td>$120</td>
-                                <td><a href="#" className="btn">View</a></td>
-                            </tr>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>St. James College</td>
-                                <td>$120</td>
-                                <td><a href="#" className="btn">View</a></td>
-                            </tr>
-                            <tr>
-                                <td>John Doe</td>
-                                <td>St. James College</td>
-                                <td>$120</td>
-                                <td><a href="#" className="btn">View</a></td>
                             </tr>
                             <tr>
                                 <td>John Doe</td>

@@ -10,9 +10,7 @@ import Dropdown from "./components/dropdown/Dropdown";
 function App() {
   return (
     <>
-      <Navbar>
-        <Dropdown />
-      </Navbar>
+      <Navbar />
       <Routes>
         <Route path="/home_client" element={<Home />} />
         < Route path="/list_depot" element={<ListsDepot />} />

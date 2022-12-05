@@ -22,7 +22,7 @@ const Home = () =>{
                 <button className="btn btn-outline-dark ms-3">Transfert</button>
                 <button className="btn btn-outline-success ms-3">Depot</button>
                 <NavLink type='button' className="btn btn-outline-dark ms-3"
-                         to='/edit_client/:{id}' 
+                         to={`/edit_client/:{id}`} 
                          data-toggle="modal" data-target="#exampleModal" d
                          ata-whatever="@mdo">Edit Information</NavLink>
             </div>

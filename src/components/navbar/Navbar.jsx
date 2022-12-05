@@ -17,7 +17,8 @@ const Navbar = () =>{
 
   return(
     <>
-      <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white 
+                      py-4 shadow-sm fixed-top">
           <div className="container header">
             <NavLink className="navbar-brand fw-bold fs-4" to="/home_client">
               TransMoney
@@ -48,7 +49,7 @@ const Navbar = () =>{
                   <NavLink className="nav-Link" to="/list_depot">ListDepot</NavLink>
                 </li>
                 <li className="nav-item ms-4">
-                  <NavLink className="nav-Link" to="/list_transfert"> List Transfert</NavLink>
+                  <NavLink className="nav-Link" to="/list_transfert"> ListTransfert</NavLink>
                 </li>
               </ul>
               <div className='dropdown'>

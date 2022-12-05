@@ -1,10 +1,11 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import "../navbar/css/NavbarCss.css";
 
 const Navbar = () =>{
 
   return(
-    <div>
-      <nav className="navbar navbar-expand-lg bg-light bg-white py-4 shadow-sm">
+    <>
+      <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
           <div className="container">
             <NavLink className="navbar-brand fw-bold fs-4" to="/">
               TransMoney
@@ -20,7 +21,7 @@ const Navbar = () =>{
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="collapse navbar-collapse " id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <NavLink
@@ -37,7 +38,7 @@ const Navbar = () =>{
                   </NavLink>
                 </li>
                 <li className="nav-item ms-4">
-                  <NavLink className="nav-Link" to="listtransfert">
+                  <NavLink className="nav-Link" to="/listtransfert">
                     ListTransfert
                   </NavLink>
                 </li>
@@ -62,7 +63,7 @@ const Navbar = () =>{
             </div>
           </div>
       </nav>
-    </div>  
+    </>  
   );
 };
 

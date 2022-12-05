@@ -1,9 +1,19 @@
 import { NavLink } from 'react-router-dom';
 import "../navbar/css/NavbarCss.css";
 import "../list/listStyle/listStyle.css"
+import { useState } from 'react';
 
 
 const Navbar = () =>{
+
+  const {state, setState} = useState(false);
+  const {showDropdown} = () => {
+    setState(true);
+  }
+
+  const {hideDropdown} = () =>{
+    setState(false);
+  }
 
   return(
     <>
@@ -34,31 +44,34 @@ const Navbar = () =>{
                     Home
                   </NavLink>
                 </li>
-                {/* <div className='dropdown'>
+                <div className='dropdown'>
                   <div className='dropdown-menu' onMouseEnter={showDropdown}
                        onMouseLeave={hideDropdown}>
-                        Lists
-                    <li className="nav-item ms-4">
-                      <NavLink className="nav-Link" to="/listdepot">
-                        List Depot
-                      </NavLink>
-                    </li>
-                    <li className="nav-item ms-4">
-                      <NavLink className="nav-Link" to="/list_transfert">
-                        List Transfert
-                      </NavLink>
-                    </li>
+                        <p>Lists</p>
+                        (state ?
+                          <ul className='dropdown-list' onMouseEnter={showDropdown}>
+                       
+                            <li className="nav-item ms-4">
+                              <NavLink className="nav-Link" to="/list_depot">
+                                List Depot
+                              </NavLink>
+                            </li>
+                            <li className="nav-item ms-4">
+                              <NavLink className="nav-Link" to="/list_transfert">
+                                List Transfert
+                              </NavLink>
+                            </li>
+                            </ul>) : null
                   </div>
-                </div> */}
+                </div>
                
                 {/* <li className="nav-item">
-                  <Link className="nav-Link" to="/contact">
+                  <NavLink className="nav-Link" to="/contact">
                     Contact
-                  </Link>
+                  </NavLink>
                 </li> */}
               </ul>
               <div className="buttons">
-                {/* parametre */}
                 <NavLink className="btn btn-outline-dark">
                   <i className="fa fa-sign-in me-1" to="/login"></i> Login
                 </NavLink>

@@ -60,6 +60,7 @@ const Navbar = () =>{
                 </li> */}
               </ul>
               <div className="buttons">
+                {/* parametre */}
                 <NavLink className="btn btn-outline-dark">
                   <i className="fa fa-sign-in me-1" to="/login"></i> Login
                 </NavLink>

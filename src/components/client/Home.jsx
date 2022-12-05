@@ -8,14 +8,14 @@ const Home = () =>{
         <div className="container home">
             <div className="row">
                 <div className="col-md-6 image">
-                 <img src="./assets/star.jpg" width="30%" height="200px" />
+                    <img src="./assets/star.jpg" width="30%" height="200px" />
                 </div>
                <div className="col-md-3">
-                <p className="">Name : </p>
-                <p className="">Last name : </p>
-                <p className="">Email : </p>
-                <p className="">Name : </p>
-                <a href="#" ></a>
+                    <p className="">Name : </p>
+                    <p className="">Last name : </p>
+                    <p className="">Email : </p>
+                    <p className="">Name : </p>
+                    <a href="#" ></a>
                 </div>
             </div>
             <div className="my-4">

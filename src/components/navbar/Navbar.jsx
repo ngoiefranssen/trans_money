@@ -17,8 +17,7 @@ const Navbar = () =>{
 
   return(
     <>
-
-       <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
           <div className="container header">
             <NavLink className="navbar-brand fw-bold fs-4" to="/home_client">
               TransMoney

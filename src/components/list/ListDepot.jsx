@@ -78,18 +78,23 @@ const ListsDepot = () =>{
                             <a href="#" className="btn">View All</a>
                         </div>
                         <table>
-                            <tr>
+                            <thead>
+                                <tr>
                                 <th>Montant</th>
                                 <th>Date</th>
                                 <th>Devise</th>
                                 <th>Option</th>
                             </tr>
-                            <tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
                                 <td>John Doe</td>
                                 <td>St. James College</td>
                                 <td>$120</td>
                                 <td><a href="#" className="btn">View</a></td>
                             </tr>
+                            </tfoot>
+                            
                         </table>
                     </div>
                     {/* <div className="new-students">

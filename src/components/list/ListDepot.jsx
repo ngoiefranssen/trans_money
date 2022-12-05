@@ -17,7 +17,7 @@ const ListsDepot = () =>{
         //     </ul>
         // </div>
         <div className="container">
-            <div className="header">
+            {/* <div className="header">
                 <div className="nav">
                     <div className="search">
                         <input type="text" placeholder="Search.." />
@@ -31,9 +31,9 @@ const ListsDepot = () =>{
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="content">
-                <div className="cards">
+                {/* <div className="cards">
                     <div className="card">
                         <div className="box">
                             <h1>2194</h1>
@@ -70,9 +70,9 @@ const ListsDepot = () =>{
                             <img src="income.png" alt="" />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="content-2">
-                    <div className="recent-payments">
+                    <div className="recent-lists-depots">
                         <div className="title">
                             <h2>Recent Payments</h2>
                             <a href="#" className="btn">View All</a>

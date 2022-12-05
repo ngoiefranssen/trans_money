@@ -5,15 +5,18 @@ import Home from "./components/client/Home";
 import ListsDepot from "./components/list/ListDepot";
 import ListTransfert from "./components/list/ListTransfert";
 import './App.css'
+import Dropdown from "./components/dropdown/Dropdown";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar>
+        <Dropdown />
+      </Navbar>
       <Routes>
         <Route path="/home_client" element={<Home />} />
-        < Route path="/listdepot" element={<ListsDepot />} />
-        <Route path="/listtransfert" element={<ListTransfert />} />
+        < Route path="/list_depot" element={<ListsDepot />} />
+        <Route path="/list_transfert" element={<ListTransfert />} />
       </Routes>
     </ >
   );

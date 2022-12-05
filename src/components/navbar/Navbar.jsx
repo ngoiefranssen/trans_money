@@ -1,13 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import "../navbar/css/NavbarCss.css";
 import "../list/listStyle/listStyle.css"
+import Dropdown from '../dropdown/Dropdown';
+
 
 const Navbar = () =>{
 
   return(
     <>
       <nav className="navbar navbar-expand-lg navbar-fixed bg-light bg-white py-4 shadow-sm">
-          <div className="container">
+          <div className="container header">
             <NavLink className="navbar-brand fw-bold fs-4" to="/home_client">
               TransMoney
             </NavLink>
@@ -23,7 +25,7 @@ const Navbar = () =>{
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav mx-auto mb-2 mb-lg-0" >
                 <li className="nav-item">
                   <NavLink
                     className="nav-Link active"
@@ -33,16 +35,24 @@ const Navbar = () =>{
                     Home
                   </NavLink>
                 </li>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav-Link" to="/listdepot">
-                    ListsDepot
-                  </NavLink>
-                </li>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav-Link" to="/listtransfert">
-                    ListTransfert
-                  </NavLink>
-                </li>
+                <Dropdown />
+                {/* <div className='dropdown'>
+                  <div className='dropdown-menu' onMouseEnter={showDropdown}
+                       onMouseLeave={hideDropdown}>
+                        Lists
+                    <li className="nav-item ms-4">
+                      <NavLink className="nav-Link" to="/listdepot">
+                        List Depot
+                      </NavLink>
+                    </li>
+                    <li className="nav-item ms-4">
+                      <NavLink className="nav-Link" to="/list_transfert">
+                        List Transfert
+                      </NavLink>
+                    </li>
+                  </div>
+                </div> */}
+               
                 {/* <li className="nav-item">
                   <Link className="nav-Link" to="/contact">
                     Contact

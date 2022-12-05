@@ -1,4 +1,4 @@
-import "../home/homeStyle/homeStyle.css";
+import '../client/style/homeStyle.css'
 
 
 const Home = () =>{
@@ -14,6 +14,7 @@ const Home = () =>{
                 <p className="">Last name : </p>
                 <p className="">Email : </p>
                 <p className="">Name : </p>
+                <a href="#" ></a>
                 </div>
             </div>
             <div className="my-4">

@@ -19,21 +19,14 @@ const Home = () =>{
                 </div>
             </div>
             <div className="my-4">
-                <button className="btn btn-primary btn-floating m-1"
-                        >Transfert</button> {/* style="background-color: #3b5998" */}
-                <button className="btn btn-outline-success ms-3">Depot</button>
-                <NavLink type='button' className="btn btn-outline-dark ms-3"
-                         to={`/edit_client/:{id}`} 
-                         data-toggle="modal" data-target="#exampleModal" d
-                         ata-whatever="@mdo">Edit Information</NavLink>
-            </div>
-
-            <a class="btn btn-primary btn-floating m-1" style="backgroundColor: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-{/* <!-- Linkedin --> */}
-<a class="btn btn-primary btn-floating m-1" style="backgroundColor: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-{/* <!-- Github --> */}
-<a class="btn btn-primary btn-floating m-1" style="backgroundColor: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+                <button className="btn btn-outline-Hex btn-floating m-1"
+                       background="#ac2bac" >Transfert</button>
+                <button className="btn btn-outline-primary btn-floating m-1"
+                        background="#0082ca">Depot</button>
+                <NavLink type='button' className="btn btn-primary btn-floating m-1"
+                         to={`/edit_client/:{id}`}
+                         background="#333333">Edit Information</NavLink>
+            </div>  
         </div>
     )
 };

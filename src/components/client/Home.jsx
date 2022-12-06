@@ -25,7 +25,7 @@ const Home = () =>{
                         background="#0082ca">Depot</button>
                 <NavLink type='button' className="btn btn-primary btn-floating m-1"
                          to={`/edit_client/:{id}`}
-                         background="#333333">Edit Information</NavLink>
+                         backgroundColor="#333333">Edit Information</NavLink>
             </div>  
         </div>
     )

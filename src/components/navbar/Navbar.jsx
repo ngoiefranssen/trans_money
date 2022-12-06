@@ -85,7 +85,7 @@ const Navbar = () =>{
             </div>
         </nav>
       </div>
-      <div className='footer'>
+      {/* <div className='footer'>
         <footer className="bg-primary text-white text-center text-lg-start">
           <div className="container p-4">
             <div className="row">
@@ -102,16 +102,16 @@ const Navbar = () =>{
                 <h5 className="text-uppercase">Links</h5>
                 <ul className="list-unstyled mb-0">
                   <li>
-                    {/* <a href="#!" className="text-white" />@Link 1 */}
+                    <a href="#!" className="text-white" />@Link 1
                   </li>
                   <li>
-                    {/* <a href="#!" className="text-white">@Link 2</a> */}
+                    <a href="#!" className="text-white">@Link 2</a>
                   </li>
                   <li>
-                    {/* <a href="#!" className="text-white">@Link 3</a> */}
+                    <a href="#!" className="text-white">@Link 3</a>
                   </li>
                   <li>
-                    {/* <a href="#!" className="text-white">@Link 4</a> */}
+                    <a href="#!" className="text-white">@Link 4</a>
                   </li>
                 </ul>
               </div>
@@ -164,7 +164,7 @@ const Navbar = () =>{
             <a className="text-white" href="https://mdbootstrap.com/">ngoiefrassen.com</a>
           </div>
         </footer>
-      </div>
+      </div> */}
     </>  
   );
 };

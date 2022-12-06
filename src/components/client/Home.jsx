@@ -19,7 +19,8 @@ const Home = () =>{
                 </div>
             </div>
             <div className="my-4">
-                <button className="btn btn-outline-dark ms-3">Transfert</button>
+                <button className="btn btn-outline-primary btn-floating m-1 ms-3"
+                        >Transfert</button> {/* style="background-color: #3b5998" */}
                 <button className="btn btn-outline-success ms-3">Depot</button>
                 <NavLink type='button' className="btn btn-outline-dark ms-3"
                          to={`/edit_client/:{id}`} 
